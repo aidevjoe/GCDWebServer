@@ -102,6 +102,16 @@ NS_ASSUME_NONNULL_BEGIN
  *  The default value is NO.
  */
 @property(nonatomic) BOOL allowHiddenItems;
+  
+/**
+ *  Sets if dropped directory should be uploaded keeping the directory structure
+ *  with all subdirectories or should upload contained files flat
+ *  to target directory.
+ *  Dropping folders suppored in Chrome 21+.
+ *
+ *  The default value is YES.
+*/
+@property(nonatomic) BOOL keepDirectoryTree;
 
 /**
  *  Sets the title for the uploader web interface.
